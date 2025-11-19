@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar styles */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Smooth animations */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Platform-specific styles */
+.platform-darwin {
+  /* macOS specific styles */
+}
+
+.platform-win32 {
+  /* Windows specific styles */
+}
+
+.platform-linux {
+  /* Linux specific styles */
+}
+
+/* Custom focus styles for better UX */
+input:focus,
+button:focus {
+  outline: none;
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(99, 102, 241, 0.3);
+}
